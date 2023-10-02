@@ -1,0 +1,89 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    margin: 0;
+}
+.todo-list-container  {
+    max-width: 400px;
+    padding: 20px;
+    text-align: center;
+}
+h1{
+    margin-top: 20%;
+    margin-bottom: 20px;
+    color: rgb(240, 83, 10);
+}
+
+ form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    
+}
+
+ input[type="text"] {
+    
+    padding: 10px;
+    border: 2px solid rgb(86, 138, 7);
+    border-radius: 5px;
+    font-size: 18px;
+    flex-grow: 1;
+}
+
+ button[type="submit"] {
+    margin-left: 1px;
+    padding: 10px 20px;
+    background-color:green;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.error-message {
+    color: red;
+    margin-bottom: 10px;
+    
+}
+
+ul.todo-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 400px;/* Set a maximum height for the list */
+    overflow-y: auto; /* Add vertical scrollbar if necessary */
+}
+
+ li {
+    font-size: 18px;
+    background-color:  #f0f0f0;;
+    border-radius: 5px;
+    margin: 5px 0;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    white-space: pre-wrap;
+}
+button.delete-button{
+    background-color: red;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 5px 10px;
+        cursor: pointer;
+    
+}
+button.clear-button {
+    margin-top: 10px;
+    background-color: #ff0000; /* Red color for clear button */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+}
